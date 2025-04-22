@@ -68,3 +68,48 @@ let nulo = null;
 
 // tipos de dados complexos
 
+// arrays
+
+let frutas = ["banana", "maça", "abacaxi", "morango"];
+
+console.log(frutas);
+
+console.log(frutas[3]);
+
+frutas[3] = "cajá";
+
+console.log(frutas);
+
+let meuArray = [
+  [true, true, "Medeiros"],
+  ["banana", "Fiat"],
+  ["Frontend", "Fullstack", 100],
+  45,
+  "Rodrigo",
+];
+
+console.log(meuArray[2][2]);
+
+meuArray[2][2] = 200;
+
+console.log(meuArray);
+
+// objetos
+
+let carro = {
+  marca: "Honda",
+  motor: 2.0,
+  modelo: "Civic Exl",
+  ano: 2020,
+  cor: "Branco",
+  bancoDeCouro: true,
+  multimidia: true,
+  tetoSolar: false,
+  extras: ["ar", "farol de milha", "led"],
+};
+
+console.log(carro.modelo);
+console.log(carro.extras[2]);
+console.log(carro["marca"]);
+
+// operações matemáticas
