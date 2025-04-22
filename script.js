@@ -113,3 +113,55 @@ console.log(carro.extras[2]);
 console.log(carro["marca"]);
 
 // operações matemáticas
+
+let numero1 = 20.46;
+let numero2 = 10;
+
+let numero3 = "30";
+let numero4 = "4020";
+
+let nome1 = "ovo";
+let nome2 = "o";
+
+//soma
+console.log(numero1 + numero2);
+console.log(numero1 + numero4);
+
+let resultado = numero4 - numero1;
+console.log(typeof resultado); //descobre o tipo do dado
+console.log(typeof numero4);
+
+//subtração
+console.log(numero1 - numero2);
+console.log(nome1 - nome2);
+
+//multiplicação
+console.log(numero1 * numero2);
+
+//divisão
+console.log(numero1 / numero2);
+
+//resto da divisão (mod)
+console.log(numero1 % numero2);
+
+//Operadores Relacionais
+
+let num1 = 30;
+let num2 = 25;
+let num3 = "30";
+
+console.log(num1 > num2);
+console.log(num1 < num2);
+console.log(num1 == num2);
+console.log(num1 != num2);
+
+console.log(typeof num1 == typeof num3);
+
+//operadores lógicos
+
+// (e) AND - &&
+// (ou) OR - ||
+// invert - !
+
+let result = num1 > num2 || num1 == num2;
+console.log(!result);
