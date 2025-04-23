@@ -40,3 +40,17 @@ saudacao("Java");
 saudacao("Javascript");
 
 mensagem("lógica de programação com JS");
+
+// Escopo global e escopo local
+
+const meuNome = "Rodrigo"; // aqui está no escopo global
+
+function mostrarMeuNome(sobrenome) {
+  const meuNome = "Lucas";
+  const segundoNome = "Mota";
+  console.log(`Olá, eu sou ${meuNome} e meu sobrenome é ${sobrenome}`);
+}
+
+console.log(segundoNome); // nao consigo acessar por conta que ela foi declarado dentro do escopo de função
+
+mostrarMeuNome("Medeiros");
