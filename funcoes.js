@@ -67,3 +67,9 @@ function somaDoisNumeros(num1, num2) {
 let resultado = somaDoisNumeros(2033, 3044);
 
 console.log(resultado);
+
+// prompt
+
+//let meuNomePrincipal = prompt("Digite seu nome principal");
+
+console.log(meuNomePrincipal);
