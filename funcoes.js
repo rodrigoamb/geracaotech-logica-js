@@ -5,24 +5,38 @@ function nomeDafuncao() {
 
 //exemplo 01
 
-function apresentacao() {
-  console.log("Olá, muito prazer, eu me chamo Rodrigo");
+function apresentacao(nome, idade) {
+  console.log(
+    `Olá, muito prazer, eu me chamo ${nome} e tenho ${idade} anos de idade`
+  );
 }
 
-apresentacao();
+// apresentacao();
 
 //exemplo 02
 
-const saudacao = function () {
-  console.log("Olá estamos aprendendo Javascript");
+const saudacao = function (linguagem) {
+  console.log(`Olá estamos aprendendo ${linguagem}`);
 };
 
-saudacao();
+// saudacao();
 
 //exemplo 03 (arrow function)
 
-const mensagem = () => {
-  console.log("Olá turma do GT, hoje estamos aprendendo funcoes");
+const mensagem = (conteudo) => {
+  console.log(`Olá turma do GT, hoje estamos aprendendo ${conteudo}`);
 };
 
-mensagem();
+// mensagem();
+
+// parametros e argumentos de uma função
+
+apresentacao("Rodrigo", 30);
+apresentacao("Rafael", 22);
+apresentacao("Lucas", 19);
+
+saudacao("C#");
+saudacao("Java");
+saudacao("Javascript");
+
+mensagem("lógica de programação com JS");
