@@ -51,6 +51,19 @@ function mostrarMeuNome(sobrenome) {
   console.log(`Olá, eu sou ${meuNome} e meu sobrenome é ${sobrenome}`);
 }
 
-console.log(segundoNome); // nao consigo acessar por conta que ela foi declarado dentro do escopo de função
+//console.log(segundoNome); // nao consigo acessar por conta que ela foi declarado dentro do escopo de função
 
 mostrarMeuNome("Medeiros");
+
+// return
+
+// uma funcao que soma dois numeros
+
+function somaDoisNumeros(num1, num2) {
+  let soma = num1 + num2;
+  return soma;
+}
+
+let resultado = somaDoisNumeros(2033, 3044);
+
+console.log(resultado);
