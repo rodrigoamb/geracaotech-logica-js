@@ -26,16 +26,16 @@
 //       codigo a ser repetido
 // }
 
-const frutas = ["banana", "morango", "laranja", "uva"];
+// const frutas = ["banana", "morango", "laranja", "uva"];
 
-let i = 0;
-while (i <= frutas.length - 1) {
-  if (frutas[i] === "laranja") {
-    frutas[i] = "abacate";
-  }
-  console.log(frutas[i]);
-  i++;
-}
+// let i = 0;
+// while (i <= frutas.length - 1) {
+//   if (frutas[i] === "laranja") {
+//     frutas[i] = "abacate";
+//   }
+//   console.log(frutas[i]);
+//   i++;
+// }
 
 const tenis = [
   {
@@ -77,3 +77,25 @@ const tenis = [
 // e o preço do reebok aumentou de 299.99 para 399.99
 // o tamanho do nike foi alterado para [42, 43, 44, 45]
 // o codigo que faz isso é o seguinte:
+
+for (let i = 0; i < tenis.length; i++) {
+  tenis[i].estoque = tenis[i].estoque - 1;
+  if (tenis[i].marca === "Puma") {
+    tenis[i].preco = 299.99;
+  } else if (tenis[i].marca === "Reebok") {
+    tenis[i].preco = 399.99;
+  }
+
+  if (tenis[i].marca === "Nike") {
+    const arrTamanhoNike = tenis[i].tamanho;
+    arrTamanhoNike[arrTamanhoNike.length] = 45;
+  }
+}
+
+console.log(tenis);
+
+// const arr = ["a", "b", "c", "d", "e", "f"];
+
+// arr[arr.length] = "g";
+
+// console.log(arr);
