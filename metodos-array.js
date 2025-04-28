@@ -148,9 +148,31 @@ const meusCarros = [
     modelo: "hr-v",
   },
   {
-    nome: "Fiat",
+    ...item,
     modelo: "argus",
   },
 ];
 
 // todos os hondas tem 10 unidades, todos os toyotas tem 5 unidades e todos os fiats tem 2 unidades
+
+const novoEstoque = meusCarros.map((item) => {
+  if (item.nome === "Honda") {
+    return { ...item, estoque: 10 };
+  } else if (item.nome === "Toyota") {
+    return { ...item, estoque: 5 };
+  } else {
+    return { ...item, estoque: 2 };
+  }
+});
+
+console.log("novoEstoque:", novoEstoque);
+
+const arrCar = [novoCarro];
+
+const numArr1 = [1, 2, 3];
+const numArr2 = [4, 5, 6];
+
+//spreed operator
+
+const numArr3 = [...numArr1, ...numArr2];
+console.log(numArr3);
