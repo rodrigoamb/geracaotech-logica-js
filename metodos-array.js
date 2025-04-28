@@ -148,7 +148,7 @@ const meusCarros = [
     modelo: "hr-v",
   },
   {
-    ...item,
+    nome: "Fiat",
     modelo: "argus",
   },
 ];
@@ -176,3 +176,20 @@ const numArr2 = [4, 5, 6];
 
 const numArr3 = [...numArr1, ...numArr2];
 console.log(numArr3);
+
+//método filter()
+//retorna um novo array apenas com os elementos que atendem a uma condição
+
+const arrFilter = numArr3.filter((item) => {
+  return item > 3;
+});
+
+console.log(arrFilter);
+
+// const carsFiltered = novoEstoque.filter((item) => {
+//   return item.estoque >= x;
+// });
+
+const carsFiltered = novoEstoque.filter((item) => {
+  return item.estoque >= 5;
+});
