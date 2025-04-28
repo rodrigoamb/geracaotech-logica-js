@@ -62,19 +62,56 @@ estoqueCarros.unshift(newCar);
 
 console.log("estoque novamente:", estoqueCarros);
 
-estoqueCarros.pop();
+// estoqueCarros.pop();
 //remove o ultimo elemento do meu array
 
-console.log("estoque com ultimo removido:", estoqueCarros);
+// console.log("estoque com ultimo removido:", estoqueCarros);
 
-estoqueCarros.pop();
+// estoqueCarros.pop();
 
-console.log("estoque com HRV removido:", estoqueCarros);
+// console.log("estoque com HRV removido:", estoqueCarros);
 
-estoqueCarros.shift();
+// estoqueCarros.shift();
 //remove o primeiro elemento do meu array.
 
-console.log("estoque com uno removido:", estoqueCarros);
+// console.log("estoque com uno removido:", estoqueCarros);
 
 //pratica:
 // crie um array de 5 elementos e utilizem os metodos, push, pop, unshift, shift e printem no console os resultados.
+
+// slice - retorna uma cópia de parte do array sem alterar o array original.
+
+const estoqueCarros2 = [
+  {
+    nome: "Honda",
+    modelo: "civic",
+  },
+  {
+    nome: "Fiat",
+    modelo: "punto",
+  },
+  {
+    nome: "Toyota",
+    modelo: "corolla",
+  },
+  {
+    nome: "Honda",
+    modelo: "hr-v",
+  },
+  {
+    nome: "Fiat",
+    modelo: "argus",
+  },
+];
+
+const novoArrayCarros = estoqueCarros2.slice(1, estoqueCarros2.length);
+// slice retorna uma cópia de uma parte do array
+
+console.log("slice:", novoArrayCarros);
+
+const arrayLetras = ["A", "B", "C", "D"];
+
+arrayLetras.splice(2, 1, "x", "y", "z");
+//Adiciona, remove ou substitui elementos em uma posição específica
+
+console.log(arrayLetras);
