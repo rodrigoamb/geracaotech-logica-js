@@ -115,3 +115,42 @@ arrayLetras.splice(2, 1, "x", "y", "z");
 //Adiciona, remove ou substitui elementos em uma posição específica
 
 console.log(arrayLetras);
+
+// método .map()
+
+const meusNumeros = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+
+const newMeusNumeros = meusNumeros.map((item) => {
+  if (item === 5) {
+    return item * 3;
+  }
+
+  return item;
+});
+
+console.log("meus numeros:", newMeusNumeros);
+
+const meusCarros = [
+  {
+    nome: "Honda",
+    modelo: "civic",
+  },
+  {
+    nome: "Fiat",
+    modelo: "punto",
+  },
+  {
+    nome: "Toyota",
+    modelo: "corolla",
+  },
+  {
+    nome: "Honda",
+    modelo: "hr-v",
+  },
+  {
+    nome: "Fiat",
+    modelo: "argus",
+  },
+];
+
+// todos os hondas tem 10 unidades, todos os toyotas tem 5 unidades e todos os fiats tem 2 unidades
