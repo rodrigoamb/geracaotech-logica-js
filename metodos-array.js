@@ -193,3 +193,43 @@ console.log(arrFilter);
 const carsFiltered = novoEstoque.filter((item) => {
   return item.estoque >= 5;
 });
+
+//forEach() -> itera sobre cada elemento do array.
+
+const list = [2, 3, 20, 50, 60];
+
+list.forEach((item) => {
+  console.log(item);
+});
+
+// find() -> Retorna o primeiro elemento que satisfaz a condição
+
+const myFind = list.find((item) => {
+  return item >= 20;
+});
+
+console.log("usando find:", myFind);
+
+// some() -> retorna true ou false, caso algum elemento da lista atende a condição
+
+const mySome = list.some((item) => {
+  return item < 60 && item > 20;
+});
+
+console.log("some:", mySome);
+
+//every() -> retorna true ou false, caso TODOS os elementos atendam a sua condição
+
+const myEvery = list.every((item) => {
+  return item > 61;
+});
+
+console.log("every:", myEvery);
+
+//sort() -> Ordena o array
+
+const list2 = [5, 2, 8, 3, 1, 7];
+
+list2.sort();
+
+console.log(list2);
