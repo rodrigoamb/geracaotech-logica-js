@@ -74,3 +74,17 @@ console.log(arrayListaDeCompras);
 
 const novoString = arrayListaDeCompras.join(" ");
 console.log(novoString);
+
+function formatarData(data) {
+  return data.split("-").reverse().join("/");
+}
+
+const resultadoDaFormatacao = formatarData("2025-04-29");
+
+console.log("formatado:", resultadoDaFormatacao);
+
+//trim() -> remove espaços vazios no começo e no final da string
+
+const meuNome = "   Rodrigo   ";
+
+console.log(meuNome.trim());
