@@ -154,3 +154,39 @@ class Pessoas {
 const cidadao = new Pessoas("Rodrigo", 30);
 
 cidadao.falar();
+
+class Lapiseiras {
+  constructor(marca, material, ponta, temBorracha) {
+    this.marca = marca;
+    this.material = material;
+    this.ponta = ponta;
+    this.temBorracha = temBorracha;
+  }
+
+  escrever() {
+    console.log(`Escrevendo com a ponta ${this.ponta}`);
+  }
+
+  trocarGrafite() {
+    console.log(`trocando grafite ${this.ponta}`);
+  }
+
+  apagar() {
+    if (this.temBorracha) {
+      console.log("Estou apagando");
+    } else {
+      console.log("Essa lapiseira nao apaga, pois nao tem borracha");
+    }
+  }
+}
+
+const lapiseira = new Lapiseiras("Compactor", "plástico", 0.07, true);
+const lapiseira2 = new Lapiseiras("Compactor", "plástico", 0.07, false);
+
+console.log(lapiseira);
+
+lapiseira.trocarGrafite();
+
+lapiseira.apagar();
+
+lapiseira2.apagar();
