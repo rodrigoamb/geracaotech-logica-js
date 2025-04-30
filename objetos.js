@@ -80,3 +80,54 @@ const [a, b, ...restoDoArray] = arrNumeros;
 console.log("a: ", a);
 console.log("b: ", b);
 console.log("resto do Array: ", restoDoArray);
+
+//operador spread (...)
+
+const usuario = {
+  nome: "Ana",
+  idade: 28,
+};
+
+//copiando objetos
+
+const novoUsuario = {
+  ...usuario,
+  profissao: "Dev",
+};
+
+console.log(novoUsuario);
+
+// copiando arrays
+
+const numerosOriginais = [1, 2, 3];
+const numerosOriginais2 = [4, 5, 6];
+
+const arrayCopiado = [...numerosOriginais, ...numerosOriginais2];
+
+console.log(arrayCopiado);
+
+//métodos de objetos
+
+const carro = {
+  marca: "Ford",
+  modelo: "Ranger",
+  ano: "2025",
+};
+
+// Object.keys() - retorna um array com as chaves do objeto
+
+const minhasChaves = Object.keys(carro);
+
+console.log(minhasChaves);
+
+// Object.value() - retorna um array com os valores do objeto
+
+const meusValores = Object.values(carro);
+
+console.log(meusValores);
+
+// Object.entries() - retorna um array de arrays chave e valor
+
+const meuArrayChaveValor = Object.entries(carro);
+
+console.log(meuArrayChaveValor);
