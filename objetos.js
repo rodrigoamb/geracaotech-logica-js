@@ -131,3 +131,26 @@ console.log(meusValores);
 const meuArrayChaveValor = Object.entries(carro);
 
 console.log(meuArrayChaveValor);
+
+//iteração sobre o objeto (for..in)
+
+for (let chave in carro) {
+  console.log(`${chave} : ${carro[chave]}`);
+}
+
+// Criando classes em Javascript
+
+class Pessoas {
+  constructor(nome, idade) {
+    this.nome = nome;
+    this.idade = idade;
+  }
+
+  falar() {
+    console.log(`Olá, meu nome é ${this.nome} e eu tenho ${this.idade} anos`);
+  }
+}
+
+const cidadao = new Pessoas("Rodrigo", 30);
+
+console.log(cidadao.falar());
