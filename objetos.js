@@ -153,4 +153,4 @@ class Pessoas {
 
 const cidadao = new Pessoas("Rodrigo", 30);
 
-console.log(cidadao.falar());
+cidadao.falar();
